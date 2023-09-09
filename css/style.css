@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar-nav {
+    justify-content: center; /* Center align the nav items */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
