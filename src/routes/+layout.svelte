@@ -1,26 +1,35 @@
+<script>
 
-<head>
-    <!-- Included link to Google font but does not show up on website for nav links, font in body -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-</head>
-<body class="page-body">
-    <div class="container">
-        <nav class="navbar">
-            <!-- Where the logo and/or agency name should go -->
-            <h1>Agency Name</h1>
-            <!-- Links for the navbar -->
-            <div class="menu-options">
-                <ul class="list-of-link">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/pricing">Pricing</a></li>
-                    <li><a href="/faq">FAQ</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>    
-</body>
+</script>
+<main>
+    <head>
+        <!-- Included link to Google font but does not show up on website for nav links, font in body -->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    </head>
+    <body class="page-body">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Where the logo and/or agency name should go -->
+                <h1>Agency Name</h1>
+                <!-- Links for the navbar -->
+                <div class="menu-options">
+                    <ul class="list-of-link">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>    
+    </body>
+</main>
+
+
+
+
+
 
 <slot />
 
@@ -81,8 +90,7 @@
         font-size: 20px;
     }
     h1 {
-        margin: 0;
-        font-size: 1em;
+        font-size: 20px;
         font-weight: normal;
         color: #ffff;
     }   
