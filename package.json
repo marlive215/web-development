@@ -36,6 +36,7 @@
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^6.4.2",
 		"bootstrap": "^5.3.1",
-		"get-google-fonts": "^1.2.2"
+		"get-google-fonts": "^1.2.2",
+		"svelte-fa": "^3.0.4"
 	}
 }
