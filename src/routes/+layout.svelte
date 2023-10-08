@@ -11,9 +11,9 @@
   .container {
      display: flex;
      flex-direction: column;
-     align-items: center; /* Center vertically */
+     align-items: center; 
      width: 100%;
-     max-width: 1200px; /* Adjust this to your desired max width */
+     max-width: 1200px; 
  }
  </style>
  <Nav />
