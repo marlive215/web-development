@@ -32,10 +32,11 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-black py-4">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="/">
             <img id="spyder-logo" src="src/imgs/mainlogo.png" alt="Logo" class="logo-img" style="max-width: 15em;">
         </a>
+        <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           {#each links as link}
           <li class="nav-item">
@@ -45,6 +46,7 @@
           </li>
           {/each}
         </ul>
+        </div>
       </div>
     </nav>
   

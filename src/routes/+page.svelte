@@ -20,10 +20,11 @@
 <main class="min-vh-100 d-flex flex-column"> 
   <section class="hero-section bg-dark text-light position-relative">
  
-    <video autoplay muted loop id="background-video" style="position: absolute; width: 100%; height: auto; z-index: 1;">
-      <source src="src/videos/pexels-artem-podrez-5725960 (2160p).mp4" type="video/mp4">
-  
-    </video>
+    <div class="ratio ratio-16x9">
+      <video autoplay muted loop id="background-video" style="object-fit-scale">
+        <source src="src/videos/pexels-artem-podrez-5725960 (2160p).mp4" type="video/mp4">
+      </video>
+    </div>
     <div class="container d-flex justify-content-center align-items-center" style="position: relative; z-index: 2;">
       <div class="text-center p-5">
         <h1 class="title display-2 font-weight-bold mb-4">
