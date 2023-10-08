@@ -1,0 +1,4 @@
+src/videos/hero-video.mp4 filter=lfs diff=lfs merge=lfs -text
+src/videos/pexels-artem-podrez-5725960[[:space:]](2160p).mp4 filter=lfs diff=lfs merge=lfs -text
+src/videos/pexels-mart-production-7534401[[:space:]](Original).mp4 filter=lfs diff=lfs merge=lfs -text
+src/videos/video[[:space:]](1080p).mp4 filter=lfs diff=lfs merge=lfs -text

@@ -1,50 +1,56 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-black">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="/">SpyderByte</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Navbar menus -->
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/pricing">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/faq">FAQ</a>
-          </li>
-        </ul>
-        <!-- Social media icons -->
-        <ul class="navbar-nav sm-icons">
-          <li><a class="nav-link" href="/">lol<i class="bi bi-facebook"></i></a></li>
-          <li><a class="nav-link" href="/">hey<i class="bi bi-instagram"></i></a></li>
-          <li><a class="nav-link" href="/">yo<i class="bi bi-twitter"></i></a></li>
-          <li><a class="nav-link" href="/">dad<i class="bi bi-pinterest"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<script>
+    import { page } from '$app/stores';
   
-  <style>
-    .navbar {
-        background-color: black;
-    }
-    .navbar .navbar-nav .nav-link {
-    color: #ffffff;
-    }   
-    .sm-icons {
-    flex-direction: row;
-    }
-    .sm-icons .nav-link {
-    padding-right: 1em;
-    }
-  </style>
+    let links = [
+      {
+        title: "About",
+        path: "/about",
+      },
+      {
+        title: "Contact",
+        path: "/contact",
+      },
+      {
+        title: "Pricing",
+        path: "/pricing",
+      },
+      {
+        title: "FAQ",
+        path: "/faq",
+      },
+    ];
+  
+  </script>
+  
+  <!DOCTYPE html>
+  <html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black py-4">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+            <img id="spyder-logo" src="src/imgs/mainlogo.png" alt="Logo" class="logo-img" style="max-width: 15em;">
+        </a>
+        <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          {#each links as link}
+          <li class="nav-item">
+              <a class="nav-link {link.path === $page.url.pathname ? 'active' : ''}" href="{link.path}" style="{link.path === $page.url.pathname ? 'color: #CCCCCC;' : ''}">
+                  {link.title}
+                </a>
+          </li>
+          {/each}
+        </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+  </body>
+  </html>
+  
