@@ -4,14 +4,15 @@
 
 <style>
   body {
-     background-color: #000;
+     background-color: black;
      color: #fff;
      font-family: 'Montserrat', sans-serif;
+     padding-top: 110px; 
   }
  </style>
  <Nav />
  
-   <div class="container">
+   <div class="container-fluid">
      <slot></slot>
    </div>
    <body></body>

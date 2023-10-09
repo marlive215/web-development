@@ -42,7 +42,7 @@
         </ul>
         </div>
         <div class="d-grid gap-2 col-2 mx-auto">
-          <a class="btn btn-lg btn-outline-danger ms-3 rounded-0 mx-3" href="/contact">Contact Us</a>
+          <a class="btn btn-lg btn-outline-danger ms-3 rounded-0 mx-4" href="/contact">Contact Us</a>
         </div>
       </div>
     </nav>
