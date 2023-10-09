@@ -1,43 +1,25 @@
 <script>
-  import { onDestroy } from "svelte";
-
-  let words = ["BUSINESS", "VENTURE", "BRAND", "FIRM", "WEBSITE", "ORGANIZATION", "IDEA"];
-  let currentWordIndex = 0;
-
-  function changeWord() {
-    currentWordIndex = (currentWordIndex + 1) % words.length;
-  }
-
-  // Set an interval to change the word every few seconds
-  const interval = setInterval(changeWord, 500);
-
-  // Clear the interval when the component is destroyed to prevent memory leaks
-  onDestroy(() => {
-    clearInterval(interval);
-  });
 </script>
 
 <main class="min-vh-100 d-flex flex-column"> 
   <section class="hero-section bg-dark text-light position-relative">
- 
-    <div class="ratio ratio-16x9">
-      <video autoplay muted loop id="background-video" style="object-fit-scale">
-        <source src="src/videos/pexels-artem-podrez-5725960 (2160p).mp4" type="video/mp4">
-      </video>
-    </div>
+    <!-- svelte-ignore a11y-img-redundant-alt -->
+    <img src="src/imgs/pexels-rfstudio-3810753-fotor-20231008173640.png" class="img-fluid" alt="Responsive image" style="object-fit: cover; width: 100%; height: 50vh; position: absolute; top: 0; left: 0; z-index: 1;">
     <div class="container d-flex justify-content-center align-items-center" style="position: relative; z-index: 2;">
-      <div class="text-center p-5">
-        <h1 class="title display-2 font-weight-bold mb-4">
-          <span>ELEVATE YOUR BRAND</span>
+      <div class="text-center p-5 ">
+        <h1 class="title display-2 fw-bolder mb-4 mt-5">
+          <span>ELEVATE YOUR <span style="color: #FF1616;">BRAND</span></span>
         </h1>
-        <h2 class="subtitle display-4 font-weight-bold mb-5">AND RUN THE WEB</h2>
-        <a href="/about" class="btn btn-danger btn-lg">
-          Learn more
-        </a>
+        <h2 class="subtitle display-4 fw-bold mb-5 mt-3">AND RUN THE WEB</h2>
+        <div class="d-grid gap-2 col-4 mx-auto">
+          <a href="/contact" class="btn btn-danger btn-lg mt-3 rounded-0 fw-bold">
+            Speak to an expert
+          </a>
+        </div>
       </div>
     </div>
   </section>
-
+  
   <section class="about-section bg-white py-3"> 
     <div class="container-fluid text-center text-dark min-vh-100">
       <h3 class="section-title display-4 font-weight-bold mb-4">About Us</h3>
